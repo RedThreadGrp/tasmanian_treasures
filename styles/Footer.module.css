@@ -1,0 +1,36 @@
+.footer {
+  background-color: #2b2b2b;
+  color: #ccc;
+  padding: 3rem 2rem;
+}
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+.links {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.nav, .social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.navLink, .socialLink {
+  color: var(--color-white);
+}
+.copyright {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+@media (min-width: 768px) {
+  .links {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

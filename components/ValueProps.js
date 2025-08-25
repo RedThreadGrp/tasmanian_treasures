@@ -1,1 +1,0 @@
-export default function ValueProps(){return <div>ValueProps</div>}

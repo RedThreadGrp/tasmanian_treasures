@@ -1,0 +1,22 @@
+.valueSection {
+  background-color: var(--color-white);
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  text-align: center;
+}
+.icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.itemTitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

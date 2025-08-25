@@ -1,0 +1,29 @@
+.header {
+  background-color: var(--color-white);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand {
+  font-family: var(--font-serif);
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+}
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+.navLink {
+  font-weight: 500;
+  color: var(--color-text);
+}

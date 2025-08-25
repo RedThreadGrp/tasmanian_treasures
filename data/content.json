@@ -1,1 +1,114 @@
-{"landingPage": {"hero": {"title": "Art Forged by the Southern Ocean", "tagline": "Hand-collected sea glass and pottery", "cta": {"text": "Shop", "url": "/collections/all"}}, "productCarousel": {"title": "Discover", "products": []}}}
+{
+  "landingPage": {
+    "hero": {
+      "title": "Art Forged by the Southern Ocean",
+      "tagline": "Hand‑collected sea glass and early 1900s pottery, shaped by storms, polished by the Southern Ocean, and reborn as timeless art and jewelry.",
+      "cta": {
+        "text": "SHOP THE FULL COLLECTION",
+        "url": "/collections/all"
+      }
+    },
+    "productCarousel": {
+      "title": "Discover Our Handcrafted Collections",
+      "products": [
+        {
+          "id": "jewelry",
+          "name": "Sea Glass Jewelry",
+          "description": "Wear a piece of the wild Tasmanian coast. Each shard of sea glass is a unique gem, shaped by the waves and set in sterling silver. A personal treasure that carries the story of the ocean.",
+          "cta": {
+            "text": "Shop Jewelry",
+            "url": "/collections/jewelry"
+          },
+          "image": "https://images.unsplash.com/photo-1619421299238-552be***?q=80&w=1974&auto=format&fit=crop"
+        },
+        {
+          "id": "framed-tiles",
+          "name": "Collector's Edition Framed Pottery",
+          "description": "The soul of our collection. These framed tiles feature rare, hand-collected pottery fragments from the early 1900s. Each one is a preserved piece of history, making it a truly one-of-a-kind statement for your home.",
+          "cta": {
+            "text": "View the Art",
+            "url": "/collections/framed-art"
+          },
+          "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=1945&auto=format&fit=crop"
+        },
+        {
+          "id": "coasters",
+          "name": "Functional Sea Glass Coasters",
+          "description": "Protect your surfaces with functional art. Our coasters bring the colors of the Tasmanian shoreline to your table. Perfect as a memorable gift or a daily reminder of the sea, they are our most popular conversation starter.",
+          "cta": {
+            "text": "Shop Coasters",
+            "url": "/collections/coasters"
+          },
+          "image": "https://images.unsplash.com/photo-1628191146312-d52c51b72352?q=80&w=2070&auto=format&fit=crop"
+        },
+        {
+          "id": "magnets",
+          "name": "Southern Ocean Sea Glass Magnets",
+          "description": "A small treasure, a perfect gift. These powerful magnets feature a hand-picked piece of genuine sea glass, offering a simple, beautiful way to bring a touch of the ocean into your kitchen or office.",
+          "cta": {
+            "text": "Shop Magnets",
+            "url": "/collections/magnets"
+          },
+          "image": "https://images.unsplash.com/photo-1585829365232-a3da63879f9c?q=80&w=2070&auto=format&fit=crop"
+        }
+      ]
+    },
+    "brandStory": {
+      "title": "From Shipwreck to Shoreline",
+      "content": "Every piece from Tasmanian Treasures begins its journey in the tempestuous Southern Ocean. For over a century, waves have churned and tumbled fragments of glass and discarded pottery from a bygone era.\n\nWe walk these remote shores after every storm, searching for the smoothest, most character-filled pieces. The blue and white patterns on our pottery tiles are remnants of daily life in the early 1900s, while our sea glass tells a story of resilience, transformed from sharp refuse into ocean-polished gems. We don’t alter their shape or color—we simply give them a new purpose, preserving their wild history for you to cherish."
+    },
+    "valuePropositions": [
+      {
+        "icon": "🌊",
+        "title": "Genuinely Tasmanian",
+        "description": "Every piece is hand-collected from the wild, remote beaches of Tasmania."
+      },
+      {
+        "icon": "🏺",
+        "title": "A Piece of History",
+        "description": "Featuring authentic pottery shards dating back to the early 20th century."
+      },
+      {
+        "icon": "🌿",
+        "title": "Sustainably Reborn",
+        "description": "We give discarded materials a second life as beautiful, lasting treasures."
+      }
+    ],
+    "testimonials": {
+      "title": "What Our Customers Are Saying",
+      "reviews": [
+        {
+          "quote": "My framed pottery tile is the centerpiece of my living room. It's not just art; it's a beautiful piece of history. I love knowing the story behind it.",
+          "author": "Chloe R., Sydney"
+        },
+        {
+          "quote": "I bought a set of the sea glass coasters as a housewarming gift, and they were a huge hit! So unique and beautifully made. Far better than anything mass-produced.",
+          "author": "Ben L., Portland"
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Find Your Piece of the Southern Ocean",
+      "content": "Our collections are crafted in small batches based on what the tides reveal. Explore our current treasures and own a unique story shaped by the sea.",
+      "cta": {
+        "text": "EXPLORE ALL PRODUCTS",
+        "url": "/collections/all"
+      }
+    },
+    "footer": {
+      "brandName": "Tasmanian Treasures",
+      "navLinks": [
+        { "text": "Shop", "url": "/collections/all" },
+        { "text": "Our Story", "url": "/about" },
+        { "text": "Contact", "url": "/contact" },
+        { "text": "Wholesale Inquiries", "url": "/wholesale" }
+      ],
+      "socialLinks": [
+        { "platform": "Instagram", "url": "https://instagram.com" },
+        { "platform": "Pinterest", "url": "https://pinterest.com" },
+        { "platform": "Facebook", "url": "https://facebook.com" }
+      ],
+      "copyright": "© 2025 Tasmanian Treasures. All Rights Reserved."
+    }
+  }
+}
