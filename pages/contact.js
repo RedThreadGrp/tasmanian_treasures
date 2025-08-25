@@ -1,14 +1,10 @@
+// pages/contact.js
+
 import Head from "next/head";
 import styles from "@/styles/FormPage.module.css";
 
 export default function Contact() {
-  // NOTE: This form is for display only. A real implementation would require
-  // a backend service or a third-party form handler.
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    alert("Thank you for your message!");
-  };
-
+  // No need for a custom handleSubmit function with Vercel Forms
   return (
     <>
       <Head>
@@ -29,7 +25,8 @@ export default function Contact() {
             </a>
             .
           </p>
-          <form onSubmit={handleSubmit} className={styles.form}>
+          {/* Add the 'name' attribute here */}
+          <form name="contact-form" className={styles.form}>
             <div className={styles.formGroup}>
               <label htmlFor="name">Full Name</label>
               <input type="text" id="name" name="name" required />

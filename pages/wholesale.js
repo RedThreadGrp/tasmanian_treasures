@@ -1,12 +1,9 @@
+// pages/wholesale.js
+
 import Head from "next/head";
-import styles from "@/styles/FormPage.module.css"; // Reusing the same form styles
+import styles from "@/styles/FormPage.module.css";
 
 export default function Wholesale() {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    alert("Thank you for your wholesale inquiry! We will be in touch shortly.");
-  };
-
   return (
     <>
       <Head>
@@ -25,7 +22,8 @@ export default function Wholesale() {
             galleries that value unique, story-driven products. Please fill out
             the form below to apply for a wholesale account.
           </p>
-          <form onSubmit={handleSubmit} className={styles.form}>
+          {/* Add the 'name' attribute here */}
+          <form name="wholesale-inquiry" className={styles.form}>
             <div className={styles.formGroup}>
               <label htmlFor="businessName">Business Name</label>
               <input type="text" id="businessName" name="businessName" required />
