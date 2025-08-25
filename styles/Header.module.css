@@ -1,7 +1,7 @@
 .header {
   background-color: var(--color-white);
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem; /* Adjusted padding for the logo */
   position: sticky;
   top: 0;
   z-index: 100;
@@ -13,11 +13,10 @@
   justify-content: space-between;
   align-items: center;
 }
-.brand {
-  font-family: var(--font-serif);
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: var(--color-primary);
+/* Style the link containing the logo */
+.brandLink {
+  display: flex; /* Helps with vertical alignment */
+  align-items: center;
 }
 .nav {
   display: flex;
