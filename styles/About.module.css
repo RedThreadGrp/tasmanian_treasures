@@ -1,0 +1,58 @@
+.aboutPage {
+  background-color: var(--color-white);
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background-color: #eaf4f4;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contentSection {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 3rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.textBlock h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.textBlock p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .contentSection {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contentSection.reverse .textBlock {
+    order: 2;
+  }
+}
