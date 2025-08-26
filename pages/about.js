@@ -6,7 +6,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>Our Story — Tasmanian Treasures</title>
+        <title>Our Story: Collecting Tasmanian Treasures</title>
         <meta
           name="description"
           content="Learn about our process of collecting and crafting treasures from the shores of Tasmania."
@@ -16,8 +16,7 @@ export default function About() {
         <section className={styles.hero}>
           <h1>From Shipwreck to Shoreline</h1>
           <p className={styles.subtitle}>
-            Every piece from Tasmanian Treasures begins its journey in the
-            tempestuous Southern Ocean.
+            Every piece from Tasmanian Treasures begins its journey in the rocky cold waters off the southernmost coast of Australia.
           </p>
         </section>
 
@@ -48,12 +47,10 @@ export default function About() {
           <div className={styles.textBlock}>
             <h2>Our Process</h2>
             <p>
-              Our process is guided by the tides and the seasons. After every
-              storm, we walk the remote shores of Tasmania, searching for the
+              Our process is guided by the tides and the seasons. We gather family memories as we walk the remote shores of Tasmania, and search for the
               smoothest, most character-filled pieces of sea glass and pottery.
               Each fragment is carefully cleaned by hand and thoughtfully
-              categorized. The finest pieces are then set in sterling silver or
-              framed, a meticulous process that honors the material's unique
+              categorized. The finest pieces are then set in sterling silver, or combined with resin or grout to form a unique mosaic. We include hand written cards with each piece, intentionally honoring the material's unique
               form and history.
             </p>
           </div>
