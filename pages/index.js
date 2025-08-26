@@ -11,7 +11,7 @@ export default function Home() {
     hero,
     productCarousel,
     brandStory,
-  } = content.landingPage;a
+  } = content.landingPage;
 
   return (
     <>
