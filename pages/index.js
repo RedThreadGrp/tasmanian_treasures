@@ -11,12 +11,12 @@ export default function Home() {
     hero,
     productCarousel,
     brandStory,
-  } = content.landingPage;
+  } = content.landingPage;a
 
   return (
     <>
       <Head>
-        <title>Tasmanian Treasures — Art Forged by the Southern Ocean</title>
+        <title>Tasmanian Treasures: Art Forged by the Southern Ocean</title>
         <meta name="description" content={hero.tagline} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
