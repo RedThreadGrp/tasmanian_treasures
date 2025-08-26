@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import styles from '@/styles/Header.module.css';
 
 export default function Header() {
@@ -8,13 +7,7 @@ export default function Header() {
       <div className={styles.container}>
         <Link href="/" legacyBehavior>
           <a className={styles.logo}>
-            <Image 
-              src="https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/logo.png" 
-              alt="Tasmanian Treasures Logo" 
-              width={180} 
-              height={45}
-              priority
-            />
+            Tasmanian Treasures
           </a>
         </Link>
         <nav className={styles.nav}>
