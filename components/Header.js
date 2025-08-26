@@ -11,8 +11,8 @@ export default function Header() {
             <Image 
               src="https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/logo.png" 
               alt="Tasmanian Treasures Logo" 
-              width={200} 
-              height={51}
+              width={180} 
+              height={45}
               priority
             />
           </a>
