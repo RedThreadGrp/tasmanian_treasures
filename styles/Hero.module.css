@@ -2,9 +2,16 @@
 .hero {
   text-align: center;
   padding: 6rem 1rem;
-  background-color: #F0EFEA; /* Slightly darker than page bg for contrast */
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
-.content {
+.overlay {
+  /* Switched to a dark, semi-transparent overlay for better text contrast */
+  background-color: rgba(29, 78, 72, 0.5); 
+  backdrop-filter: blur(5px);
+  padding: 3rem;
+  border-radius: 0.5rem;
   max-width: 56rem;
   margin: 0 auto;
 }
@@ -12,7 +19,8 @@
   font-family: 'Lora', serif;
   font-size: 3.5rem;
   font-weight: 700;
-  color: #134e4a;
+  /* Changed title text to a light color to pop against the dark overlay */
+  color: #ffffff; 
   line-height: 1.2;
 }
 .tagline {
@@ -21,13 +29,14 @@
   margin-left: auto;
   margin-right: auto;
   font-size: 1.125rem;
-  color: #374151;
+  /* Changed tagline text to a light color */
+  color: #e0e0e0; 
 }
 .ctaButton {
   margin-top: 2rem;
   display: inline-block;
-  background-color: #0f766e;
-  color: white;
+  background-color: #f0fdfa; /* Lightened button for contrast */
+  color: #134e4a; /* Dark text for button */
   padding: 0.75rem 2rem;
   border-radius: 9999px;
   font-size: 1.125rem;
@@ -38,5 +47,5 @@
 }
 .ctaButton:hover {
   transform: scale(1.05);
-  background-color: #115e59;
+  background-color: #ffffff;
 }
