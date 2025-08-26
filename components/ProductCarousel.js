@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '@/styles/ProductCarousel.module.css';
@@ -6,14 +6,21 @@ import styles from '@/styles/ProductCarousel.module.css';
 const ProductCard = ({ product }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
-    if (product.images.length > 1) {
-      const interval = setInterval(() => {
-        setCurrentIndex(prevIndex => (prevIndex + 1) % product.images.length);
-      }, 3500);
-      return () => clearInterval(interval);
-    }
-  }, [product.images]);
+  const hasMultipleImages = product.images.length > 1;
+
+  const goToPrevious = (e) => {
+    e.preventDefault();
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? product.images.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const goToNext = (e) => {
+    e.preventDefault();
+    const isLastSlide = currentIndex === product.images.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
 
   return (
     <div className={styles.card}>
@@ -25,6 +32,16 @@ const ProductCard = ({ product }) => {
           objectFit="cover"
           className={styles.image}
         />
+        {hasMultipleImages && (
+          <>
+            <button onClick={goToPrevious} className={`${styles.arrow} ${styles.leftArrow}`}>
+              &#10094;
+            </button>
+            <button onClick={goToNext} className={`${styles.arrow} ${styles.rightArrow}`}>
+              &#10095;
+            </button>
+          </>
+        )}
       </div>
       <div className={styles.cardContent}>
         <h3 className={styles.productName}>{product.name}</h3>
@@ -42,7 +59,7 @@ export default function ProductCarousel({ title, products }) {
     <section id="products" className={styles.section}>
       <div className={styles.container}>
         <h2 className={styles.title}>{title}</h2>
-        <div className={styles.carousel}>
+        <div className={styles.grid}>
           {products.map(product => (
             <ProductCard key={product.id} product={product} />
           ))}

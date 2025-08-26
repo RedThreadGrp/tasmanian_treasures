@@ -7,7 +7,7 @@
         "text": "Explore the Collections",
         "url": "#products"
       },
-      "backgroundImage": "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/art-2.jpg"
+      "backgroundImage": "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/hero-beach.jpg"
     },
     "productCarousel": {
       "title": "Our Handcrafted Collections",
@@ -26,8 +26,8 @@
         },
         {
           "id": "framed-tiles",
-          "name": "Framed Sea Pottery Tiles",
-          "description": "A preserved piece of history. Rare pottery fragments from the early 1900s, elegantly framed.",
+          "name": "One of a kind pieces, handcrafted into elegant art",
+          "description": "A preserved and restored piece of history. Rare pottery and sea glass fragments from the early 1900s.",
           "cta": {
             "text": "View the Art →",
             "url": "/products/art"
@@ -71,17 +71,9 @@
       ]
     },
     "brandStory": {
-      "title": "From Shipwreck to Shoreline",
-      "content": "Every piece from Tasmanian Treasures begins its journey in the tempestuous Southern Ocean. We walk remote shores after every storm, searching for the smoothest, most character-filled pieces of glass and discarded pottery from a bygone era. We don’t alter their shape or color—we simply give them a new purpose, preserving their wild history for you to cherish.",
+      "title": "Shoreline Relics from Australia",
+      "content": "Every piece from Tasmanian Treasures begins its journey in the tempestuous Southern Ocean, at the bottom of the world. We walk remote shores in all weather, searching for the smoothest, most character-filled pieces of glass and sea sculpted pottery remnants from the early 1900's. We don’t alter their shape or color. We reinvent the discarded fragments and give them a new purpose, preserving their wild history for you to cherish.",
       "image": "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/art-1.jpg"
-    },
-    "finalCta": {
-      "title": "Find Your Piece of the Southern Ocean",
-      "content": "Our collections are crafted in small batches based on what the tides reveal. Explore our current treasures.",
-      "cta": {
-        "text": "Shop The Full Collection",
-        "url": "/products"
-      }
     }
   }
 }
