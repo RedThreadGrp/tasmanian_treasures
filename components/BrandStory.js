@@ -1,18 +1,24 @@
+import Image from 'next/image';
 import styles from '@/styles/BrandStory.module.css';
 
-export default function BrandStory({ title, content }) {
-  // Split content by newline characters to create paragraphs
-  const paragraphs = content.split('\n\n');
-
+export default function BrandStory({ title, content, image }) {
   return (
-    <section className={styles.brandStory}>
+    <section id="story" className={styles.section}>
       <div className={styles.container}>
-        <h2 className={styles.title}>{title}</h2>
-        {paragraphs.map((p, index) => (
-          <p key={index} className={styles.content}>
-            {p}
-          </p>
-        ))}
+        <div className={styles.imageWrapper}>
+          <Image
+            src={image}
+            alt="Collecting sea glass on a Tasmanian beach"
+            width={500}
+            height={400}
+            objectFit="cover"
+            className={styles.image}
+          />
+        </div>
+        <div className={styles.textWrapper}>
+          <h2 className={styles.title}>{title}</h2>
+          <p className={styles.content}>{content}</p>
+        </div>
       </div>
     </section>
   );

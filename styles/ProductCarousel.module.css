@@ -1,55 +1,62 @@
-.carouselSection {
-  text-align: center;
-  background-color: var(--color-white);
+/* styles/ProductCarousel.module.css */
+.section {
+  padding: 4rem 0;
+  background-color: white;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 .title {
-  font-size: 2.5rem;
+  font-family: 'Lora', serif;
+  font-size: 2.25rem;
+  text-align: center;
+  color: #134e4a;
   margin-bottom: 3rem;
 }
-.grid {
+.carousel {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
-.productCard {
-  border: 1px solid #ddd;
-  border-radius: var(--border-radius);
+.card {
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  text-align: left;
-  display: flex;
-  flex-direction: column;
 }
-.productImage {
+.imageContainer {
+  position: relative;
   width: 100%;
-  height: 250px;
-  object-fit: cover;
+  height: 20rem;
+}
+.image {
+  transition: transform 0.5s ease, opacity 0.3s ease;
+}
+.card:hover .image {
+  transform: scale(1.05);
+}
+.cardContent {
+  padding: 1.5rem;
 }
 .productName {
+  font-family: 'Lora', serif;
   font-size: 1.5rem;
-  margin: 1rem 1.5rem 0.5rem;
+  font-weight: 600;
+  color: #134e4a;
 }
-.productDescription {
-  margin: 0 1.5rem 1.5rem;
-  flex-grow: 1; /* Pushes CTA to the bottom */
+.description {
+  margin-top: 0.5rem;
+  color: #4b5563;
 }
 .ctaLink {
-  margin: 0 1.5rem 1.5rem;
-  align-self: flex-start;
+  margin-top: 1rem;
   display: inline-block;
-  padding: 0.6rem 1.2rem;
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  border-radius: var(--border-radius);
-  font-weight: 500;
+  color: #0f766e;
+  font-weight: 700;
+  text-decoration: none;
 }
-@media (min-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 1024px) {
-  .grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
+.ctaLink:hover {
+  text-decoration: underline;
 }

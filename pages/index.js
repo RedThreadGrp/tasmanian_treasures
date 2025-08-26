@@ -5,18 +5,12 @@ import content from "@/data/content.json";
 import Hero from "@/components/Hero";
 import ProductCarousel from "@/components/ProductCarousel";
 import BrandStory from "@/components/BrandStory";
-import ValuePropositions from "@/components/ValuePropositions";
-import Testimonials from "@/components/Testimonials";
-import FinalCta from "@/components/FinalCta";
 
 export default function Home() {
   const { 
     hero,
     productCarousel,
     brandStory,
-    valuePropositions,
-    testimonials,
-    finalCta 
   } = content.landingPage;
 
   return (
@@ -31,7 +25,8 @@ export default function Home() {
         <Hero 
           title={hero.title} 
           tagline={hero.tagline} 
-          cta={hero.cta} 
+          cta={hero.cta}
+          backgroundImage={hero.backgroundImage}
         />
         <ProductCarousel 
           title={productCarousel.title} 
@@ -40,18 +35,7 @@ export default function Home() {
         <BrandStory 
           title={brandStory.title} 
           content={brandStory.content}
-        />
-        <ValuePropositions 
-          items={valuePropositions}
-        />
-        <Testimonials
-          title={testimonials.title}
-          reviews={testimonials.reviews}
-        />
-        <FinalCta
-          title={finalCta.title}
-          content={finalCta.content}
-          cta={finalCta.cta}
+          image={brandStory.image}
         />
       </main>
     </>

@@ -1,33 +1,47 @@
+/* styles/Hero.module.css */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1549231481-223fca804b4c?q=80&w=2070&auto=format&fit=crop');
+  text-align: center;
+  padding: 5rem 1rem;
   background-size: cover;
   background-position: center;
-  color: var(--color-white);
-  text-align: center;
-  padding: 8rem 2rem;
+  position: relative;
 }
-.content {
-  max-width: 800px;
+.overlay {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  padding: 3rem;
+  border-radius: 0.5rem;
+  max-width: 56rem;
   margin: 0 auto;
 }
 .title {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-  line-height: 1.1;
-  color: var(--color-white);
+  font-family: 'Lora', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #134e4a;
 }
 .tagline {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-  opacity: 0.9;
+  margin-top: 1rem;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.125rem;
+  color: #374151;
 }
 .ctaButton {
+  margin-top: 2rem;
   display: inline-block;
-  padding: 1rem 2.5rem;
-  background-color: var(--color-secondary);
-  color: var(--color-white);
-  border-radius: var(--border-radius);
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
+  background-color: #0f766e;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+  transition: all 0.3s;
+}
+.ctaButton:hover {
+  transform: scale(1.05);
+  background-color: #115e59;
 }

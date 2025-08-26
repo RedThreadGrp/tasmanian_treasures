@@ -35,7 +35,7 @@ export default function About() {
           </div>
           <div className={styles.imageBlock}>
             <Image
-              src="https://images.unsplash.com/photo-1549231481-223fca804b4c?q=80&w=2070&auto=format&fit=crop"
+              src="https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/art-1.jpg"
               alt="Wild Tasmanian coastline"
               width={600}
               height={400}
@@ -59,7 +59,7 @@ export default function About() {
           </div>
           <div className={styles.imageBlock}>
             <Image
-              src="https://images.unsplash.com/photo-1585829365232-a3da63879f9c?q=80&w=2070&auto=format&fit=crop"
+              src="https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/coaster%20textured.jpg"
               alt="A collection of found sea glass"
               width={600}
               height={400}

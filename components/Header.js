@@ -1,30 +1,29 @@
 import Link from 'next/link';
-import Image from 'next/image'; // Import the Image component
+import Image from 'next/image';
 import styles from '@/styles/Header.module.css';
-import content from "@/data/content.json";
 
 export default function Header() {
-  const { navLinks } = content.landingPage.footer;
-
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        {/* Replace the text brand with the logo image */}
-        <Link href="/" className={styles.brandLink}>
-          <Image 
-            src="/logo.svg" 
-            alt="Tasmanian Treasures Logo"
-            width={200} 
-            height={60}
-            priority 
-          />
+        <Link href="/" legacyBehavior>
+          <a className={styles.logo}>
+            <Image 
+              src="https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/logo.jpg" 
+              alt="Tasmanian Treasures Logo" 
+              width={180} 
+              height={48}
+              priority
+            />
+          </a>
         </Link>
         <nav className={styles.nav}>
-          {navLinks.map((link) => (
-            <Link key={link.url} href={link.url} className={styles.navLink}>
-              {link.text}
-            </Link>
-          ))}
+          <Link href="/#products">Collections</Link>
+          <Link href="/about">Our Story</Link>
+          <Link href="/contact">Contact</Link>
+          <Link href="/products" legacyBehavior>
+            <a className={styles.ctaButton}>Shop All</a>
+          </Link>
         </nav>
       </div>
     </header>

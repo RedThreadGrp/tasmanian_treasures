@@ -1,28 +1,43 @@
+/* styles/Header.module.css */
 .header {
-  background-color: var(--color-white);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  padding: 0.5rem 2rem; /* Adjusted padding for the logo */
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 50;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  padding: 1rem 2rem;
 }
 .container {
-  max-width: var(--max-width);
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-/* Style the link containing the logo */
-.brandLink {
-  display: flex; /* Helps with vertical alignment */
-  align-items: center;
+.logo {
+  cursor: pointer;
 }
 .nav {
   display: flex;
-  gap: 1.5rem;
+  align-items: center;
+  gap: 2rem;
 }
-.navLink {
-  font-weight: 500;
-  color: var(--color-text);
+.nav a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+.nav a:hover {
+  color: #0d9488;
+}
+.ctaButton {
+  background-color: #0f766e;
+  color: white !important;
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  transition: background-color 0.3s;
+}
+.ctaButton:hover {
+  background-color: #115e59;
 }
