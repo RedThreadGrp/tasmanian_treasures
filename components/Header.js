@@ -9,10 +9,10 @@ export default function Header() {
         <Link href="/" legacyBehavior>
           <a className={styles.logo}>
             <Image 
-              src="https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/logo.jpg" 
+              src="https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/logo.png" 
               alt="Tasmanian Treasures Logo" 
-              width={180} 
-              height={48}
+              width={200} 
+              height={51}
               priority
             />
           </a>
@@ -21,6 +21,7 @@ export default function Header() {
           <Link href="/#products">Collections</Link>
           <Link href="/about">Our Story</Link>
           <Link href="/contact">Contact</Link>
+          <Link href="/wholesale">Wholesale</Link>
           <Link href="/products" legacyBehavior>
             <a className={styles.ctaButton}>Shop All</a>
           </Link>
