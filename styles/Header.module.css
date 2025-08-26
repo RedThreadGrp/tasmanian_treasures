@@ -1,47 +1,43 @@
-/* styles/Header.module.css */
-.header {
-  background-color: #F8F5F2; /* Match logo background */
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  padding: 1.25rem 2rem;
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo {
-  text-decoration: none;
-  font-family: 'Lora', serif;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #1E463A;
-}
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-.nav a {
-  text-decoration: none;
-  color: #333;
-  transition: color 0.3s;
-  font-weight: 500;
-}
-.nav a:hover {
-  color: #0d9488;
-}
-.ctaButton {
-  background-color: #0f766e;
-  color: white !important;
-  padding: 0.5rem 1.25rem;
-  border-radius: 9999px;
-  transition: background-color 0.3s;
-}
-.ctaButton:hover {
-  background-color: #115e59;
+import Head from "next/head";
+import content from "@/data/content.json";
+
+// Import all the section components
+import Hero from "@/components/Hero";
+import ProductCarousel from "@/components/ProductCarousel";
+import BrandStory from "@/components/BrandStory";
+
+export default function Home() {
+  const { 
+    hero,
+    productCarousel,
+    brandStory,
+  } = content.landingPage;
+
+  return (
+    <>
+      <Head>
+        <title>Tasmanian Treasures: Art Forged by the Southern Ocean</title>
+        <meta name="description" content={hero.tagline} />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <main>
+        <Hero 
+          title={hero.title} 
+          tagline={hero.tagline} 
+          cta={hero.cta}
+          backgroundImage={hero.backgroundImage}
+        />
+        <ProductCarousel 
+          title={productCarousel.title} 
+          products={productCarousel.products} 
+        />
+        <BrandStory 
+          title={brandStory.title} 
+          content={brandStory.content}
+          image={brandStory.image}
+        />
+      </main>
+    </>
+  );
 }
