@@ -14,7 +14,7 @@
       "products": [
         {
           "id": "jewelry",
-          "name": "Sea Glass Jewelry",
+          "name": "Jewelry",
           "description": "Wear a piece of the wild coast. Unique gems shaped by the waves, set in elegant designs.",
           "cta": {
             "text": "Shop Jewelry →",
@@ -41,7 +41,7 @@
         },
         {
           "id": "coasters",
-          "name": "Sea Glass Coasters",
+          "name": "Functional Mosaics",
           "description": "Protect your surfaces with functional art. A perfect, memorable gift and conversation starter.",
           "cta": {
             "text": "Shop Coasters →",
@@ -54,18 +54,31 @@
           ]
         },
         {
-          "id": "magnets",
-          "name": "Sea Glass Magnets",
-          "description": "A small, beautiful treasure. Bring a touch of the Southern Ocean into your home or office.",
+          "id": "seasonal",
+          "name": "Seasonal Gifts and Ornaments",
+          "description": "The perfect Christmas gift. These ornaments capture the holiday spirit.",
           "cta": {
-            "text": "Shop Magnets →",
-            "url": "/products/magnets"
+            "text": "Shop Seasonal →",
+            "url": "/products/seasonal"
           },
           "images": [
-            "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/magnet-1.jpg",
-            "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/magnet-2.jpg",
-            "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/magnet-3.jpg",
-            "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/magnet-4.jpg"
+            "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/lit-ornament1.png",
+            "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/lit-ornament2.png",
+            "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/lit-ornament3.png",
+            "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/lit-ornament4.png"
+          ]
+        },
+        {
+          "id": "keychains",
+          "name": "Glass & Pottery Fob",
+          "description": "Carry a piece of the Tasmanian coast with you. A perfect small gift or personal treasure.",
+          "cta": {
+            "text": "Shop Keychains →",
+            "url": "/products/keychains"
+          },
+          "images": [
+            "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/keychain1.jpg",
+            "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/keychain2.jpg"
           ]
         }
       ]
