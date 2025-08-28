@@ -35,6 +35,9 @@
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   overflow: hidden;
+  /* Make the card a flex container to align content */
+  display: flex;
+  flex-direction: column;
 }
 .imageContainer {
   position: relative;
@@ -46,6 +49,10 @@
 }
 .cardContent {
   padding: 1.5rem;
+  /* Allow this section to grow and fill available space */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 .productName {
   font-family: 'Lora', serif;
@@ -58,11 +65,14 @@
   color: #4b5563;
 }
 .ctaLink {
-  margin-top: 1rem;
   display: inline-block;
   color: #0f766e;
   font-weight: 700;
   text-decoration: none;
+  /* This pushes the link to the bottom of the card */
+  margin-top: auto; 
+  padding-top: 1rem; /* Add some space above the link */
+  align-self: flex-start;
 }
 .ctaLink:hover {
   text-decoration: underline;
