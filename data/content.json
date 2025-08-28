@@ -62,10 +62,11 @@
             "url": "/products/seasonal"
           },
           "images": [
-            "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/lit-ornament1.png",
-            "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/lit-ornament2.png",
-            "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/lit-ornament3.png",
-            "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/lit-ornament4.png"
+            "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/lit-ornament1.jpg",
+            "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/lit-ornament2.jpg",
+            "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/lit-ornament3.jpg",
+            "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/lit-ornament4.jpg",
+            "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/unlit-ornament.jpg"
           ]
         },
         {
