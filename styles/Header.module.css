@@ -1,11 +1,11 @@
 /* styles/Header.module.css */
 .header {
-  background-color: #F8F5F2; /* Match logo background */
+  background-color: #F8F5F2;
   position: sticky;
   top: 0;
   z-index: 50;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  padding: 1.25rem 2rem;
+  padding: 1.25rem 1.5rem;
 }
 .container {
   max-width: 1200px;
@@ -17,31 +17,82 @@
 .logo {
   text-decoration: none;
   font-family: 'Lora', serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 600;
   color: #1E463A;
 }
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
+.desktopNav {
+  display: none; /* Hidden on mobile by default */
 }
-.nav a {
+.menuButton {
+  display: block; /* Shown on mobile by default */
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 60; /* Ensure it's above other elements */
+  color: #1E463A;
+}
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 0;
+  background-color: #F8F5F2;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.mobileNav a {
   text-decoration: none;
   color: #333;
-  transition: color 0.3s;
   font-weight: 500;
+  font-size: 1.125rem;
 }
-.nav a:hover {
-  color: #0d9488;
-}
-.ctaButton {
+.mobileCtaButton {
   background-color: #0f766e;
   color: white !important;
-  padding: 0.5rem 1.25rem;
+  padding: 0.75rem 1.5rem;
   border-radius: 9999px;
-  transition: background-color 0.3s;
+  width: 80%;
+  text-align: center;
 }
-.ctaButton:hover {
-  background-color: #115e59;
+
+/* Medium screens and up (tablets, desktops) */
+@media (min-width: 768px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+  .desktopNav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .desktopNav a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+    font-weight: 500;
+  }
+  .desktopNav a:hover {
+    color: #0d9488;
+  }
+  .ctaButton {
+    background-color: #0f766e;
+    color: white !important;
+    padding: 0.5rem 1.25rem;
+    border-radius: 9999px;
+    transition: background-color 0.3s;
+  }
+  .ctaButton:hover {
+    background-color: #115e59;
+  }
+  .menuButton {
+    display: none; /* Hide hamburger on desktop */
+  }
+  .mobileNav {
+    display: none; /* Hide mobile menu on desktop */
+  }
 }

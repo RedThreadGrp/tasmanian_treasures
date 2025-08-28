@@ -35,7 +35,6 @@
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   overflow: hidden;
-  /* Make the card a flex container to align content */
   display: flex;
   flex-direction: column;
 }
@@ -49,7 +48,6 @@
 }
 .cardContent {
   padding: 1.5rem;
-  /* Allow this section to grow and fill available space */
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -69,9 +67,8 @@
   color: #0f766e;
   font-weight: 700;
   text-decoration: none;
-  /* This pushes the link to the bottom of the card */
   margin-top: auto; 
-  padding-top: 1rem; /* Add some space above the link */
+  padding-top: 1rem;
   align-self: flex-start;
 }
 .ctaLink:hover {
@@ -104,3 +101,4 @@
 .rightArrow {
   right: 0.5rem;
 }
+
