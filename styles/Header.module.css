@@ -68,7 +68,7 @@
   .desktopNav {
     display: flex;
     align-items: center;
-    gap: 1.5rem; /* Reduced gap for better spacing */
+    gap: 2rem; /* Increased gap for better spacing */
   }
   .desktopNav a {
     text-decoration: none;
