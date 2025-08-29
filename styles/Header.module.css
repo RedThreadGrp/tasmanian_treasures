@@ -68,13 +68,14 @@
   .desktopNav {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem; /* Reduced gap for better spacing */
   }
   .desktopNav a {
     text-decoration: none;
     color: #333;
     transition: color 0.3s;
     font-weight: 500;
+    white-space: nowrap; /* Prevent links from wrapping */
   }
   .desktopNav a:hover {
     color: #0d9488;
