@@ -16,10 +16,8 @@
           "id": "jewelry",
           "name": "Jewelry",
           "description": "Wear a piece of the wild coast. Unique gems shaped by the waves, set in elegant designs.",
-          "cta": {
-            "text": "View Jewelry →",
-            "url": "/products/jewelry"
-          },
+          "cta": { "text": "View Jewelry →", "url": "/products/jewelry" },
+          "shopifyProductId": "7452386623622",
           "images": [
             "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/Pendant2.jpg",
             "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/Pendant3.jpg",
@@ -33,10 +31,8 @@
           "id": "framed-tiles",
           "name": "Handcrafted Mosaics",
           "description": "A preserved and restored piece of history. Rare pottery and sea glass fragments from the early 1900s are blended with other materials to create something new.",
-          "cta": {
-            "text": "View the Art →",
-            "url": "/products/art"
-          },
+          "cta": { "text": "View the Art →", "url": "/products/art" },
+          "shopifyProductId": "7452384395398",
           "images": [
             "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/art%20b.jpg",
             "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/art-1.jpg",
@@ -48,10 +44,8 @@
           "id": "coasters",
           "name": "Functional Mosaics",
           "description": "Protect your surfaces with functional art. A perfect, memorable gift and conversation starter.",
-          "cta": {
-            "text": "View Coasters →",
-            "url": "/products/coasters"
-          },
+          "cta": { "text": "View Coasters →", "url": "/products/coasters" },
+          "shopifyProductId": "7452385804422",
           "images": [
             "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/coaster%20A.jpg",
             "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/coaster%20B.jpg",
@@ -62,10 +56,8 @@
           "id": "seasonal",
           "name": "Seasonal Gifts and Ornaments",
           "description": "The perfect Christmas gift. These ornaments capture the holiday spirit.",
-          "cta": {
-            "text": "View Seasonal →",
-            "url": "/products/seasonal"
-          },
+          "cta": { "text": "View Seasonal →", "url": "/products/seasonal" },
+          "shopifyProductId": "7452384362630",
           "images": [
             "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/lit-ornament1.jpg",
             "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/lit-ornament2.jpg",
@@ -78,10 +70,8 @@
           "id": "keychains",
           "name": "Glass & Pottery Fob",
           "description": "Carry a piece of the Tasmanian coast with you. A perfect small gift or personal treasure.",
-          "cta": {
-            "text": "View Keychains →",
-            "url": "/products/keychains"
-          },
+          "cta": { "text": "View Keychains →", "url": "/products/keychains" },
+          "shopifyProductId": "7452384329862",
           "images": [
             "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/keychain1.jpg",
             "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/keychain2.jpg"
