@@ -20,18 +20,27 @@
   font-size: 1.25rem;
   font-weight: 600;
   color: #1E463A;
+  z-index: 100; /* Ensure logo is clickable over mobile nav */
 }
+
+/* --- Mobile First Styles --- */
+
+/* Hide desktop nav on mobile by default */
 .desktopNav {
-  display: none; /* Hidden on mobile by default */
+  display: none;
 }
+
+/* Style the hamburger menu button */
 .menuButton {
-  display: block; /* Shown on mobile by default */
+  display: block;
   background: none;
   border: none;
   cursor: pointer;
-  z-index: 60; /* Ensure it's above other elements */
+  z-index: 100;
   color: #1E463A;
 }
+
+/* Styles for the dropdown mobile menu */
 .mobileNav {
   display: flex;
   flex-direction: column;
@@ -40,7 +49,7 @@
   padding: 2rem 0;
   background-color: #F8F5F2;
   position: absolute;
-  top: 100%;
+  top: 100%; /* Position below the header */
   left: 0;
   width: 100%;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -60,22 +69,29 @@
   text-align: center;
 }
 
-/* Medium screens and up (tablets, desktops) */
+/* --- Desktop Styles (using min-width media query) --- */
 @media (min-width: 768px) {
   .logo {
     font-size: 1.5rem;
   }
+  
+  /* Show desktop nav and hide mobile button on larger screens */
   .desktopNav {
     display: flex;
     align-items: center;
-    gap: 2rem; /* Increased gap for better spacing */
+    gap: 2rem;
   }
+  .menuButton {
+    display: none;
+  }
+
+  /* These styles are now specific to the desktop nav */
   .desktopNav a {
     text-decoration: none;
     color: #333;
     transition: color 0.3s;
     font-weight: 500;
-    white-space: nowrap; /* Prevent links from wrapping */
+    white-space: nowrap;
   }
   .desktopNav a:hover {
     color: #0d9488;
@@ -89,11 +105,5 @@
   }
   .ctaButton:hover {
     background-color: #115e59;
-  }
-  .menuButton {
-    display: none; /* Hide hamburger on desktop */
-  }
-  .mobileNav {
-    display: none; /* Hide mobile menu on desktop */
   }
 }
