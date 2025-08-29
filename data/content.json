@@ -17,11 +17,16 @@
           "name": "Jewelry",
           "description": "Wear a piece of the wild coast. Unique gems shaped by the waves, set in elegant designs.",
           "cta": {
-            "text": "Shop Jewelry →",
+            "text": "View Jewelry →",
             "url": "/products/jewelry"
           },
           "images": [
-            "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/jewelry_pic.png"
+            "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/Pendant2.jpg",
+            "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/Pendant3.jpg",
+            "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/Pendant4.jpg",
+            "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/Pendant5.jpg",
+            "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/earrings1.jpg",
+            "https://raw.githubusercontent.com/RedThreadGrp/tasmanian_treasures/main/public/earrings2.jpg"
           ]
         },
         {
@@ -44,7 +49,7 @@
           "name": "Functional Mosaics",
           "description": "Protect your surfaces with functional art. A perfect, memorable gift and conversation starter.",
           "cta": {
-            "text": "Shop Coasters →",
+            "text": "View Coasters →",
             "url": "/products/coasters"
           },
           "images": [
@@ -58,7 +63,7 @@
           "name": "Seasonal Gifts and Ornaments",
           "description": "The perfect Christmas gift. These ornaments capture the holiday spirit.",
           "cta": {
-            "text": "Shop Seasonal →",
+            "text": "View Seasonal →",
             "url": "/products/seasonal"
           },
           "images": [
@@ -74,7 +79,7 @@
           "name": "Glass & Pottery Fob",
           "description": "Carry a piece of the Tasmanian coast with you. A perfect small gift or personal treasure.",
           "cta": {
-            "text": "Shop Keychains →",
+            "text": "View Keychains →",
             "url": "/products/keychains"
           },
           "images": [
