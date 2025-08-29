@@ -1,33 +1,50 @@
-import { useRouter } from 'next/router';
 import Head from 'next/head';
 import content from '@/data/content.json';
 import ShopifyBuyButton from '@/components/ShopifyBuyButton';
-import ProductGallery from '@/components/ProductGallery'; // Import the new gallery component
+import ProductGallery from '@/components/ProductGallery';
 
-export default function ProductCategoryPage() {
-  const router = useRouter();
-  const { category } = router.query;
+// This function tells Next.js which pages to build
+export async function getStaticPaths() {
+  const paths = content.landingPage.productCarousel.products.map(product => ({
+    params: { category: product.id }, // Use the 'id' field for the URL slug
+  }));
 
-  const productData = content.landingPage.productCarousel.products.find(p => p.cta.url.endsWith(category));
+  return { paths, fallback: false }; // fallback: false means any path not returned will 404
+}
 
-  if (!productData) {
-    return <p>Loading product...</p>;
+// This function gets the data for each individual page
+export async function getStaticProps({ params }) {
+  const productData = content.landingPage.productCarousel.products.find(
+    p => p.id === params.category
+  );
+
+  return {
+    props: {
+      product: productData,
+    },
+  };
+}
+
+// The page component now receives the data as props
+export default function ProductCategoryPage({ product }) {
+  if (!product) {
+    return <p>Product not found.</p>;
   }
 
   return (
     <>
       <Head>
-        <title>{productData.name} — Tasmanian Treasures</title>
-        <meta name="description" content={productData.description} />
+        <title>{product.name} — Tasmanian Treasures</title>
+        <meta name="description" content={product.description} />
       </Head>
       <main>
         <div style={{ padding: '4rem 1rem', textAlign: 'center' }}>
-          <h1>{productData.name}</h1>
-          <p style={{ maxWidth: '600px', margin: '1rem auto' }}>{productData.description}</p>
+          <h1>{product.name}</h1>
+          <p style={{ maxWidth: '600px', margin: '1rem auto' }}>{product.description}</p>
           
-          {productData.shopifyProductId ? (
+          {product.shopifyProductId ? (
             <div style={{ marginTop: '2rem', maxWidth: '400px', margin: 'auto' }}>
-              <ShopifyBuyButton productId={productData.shopifyProductId} />
+              <ShopifyBuyButton productId={product.shopifyProductId} />
             </div>
           ) : (
             <p style={{ marginTop: '2rem', fontStyle: 'italic', color: '#666' }}>
@@ -36,8 +53,7 @@ export default function ProductCategoryPage() {
           )}
         </div>
         
-        {/* Use the new ProductGallery component instead of the old carousel */}
-        <ProductGallery images={productData.images} title="Gallery" />
+        <ProductGallery images={product.images} title="Gallery" />
       </main>
     </>
   );
